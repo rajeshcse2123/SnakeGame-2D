@@ -1,0 +1,105 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+}
+
+.score{
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top : 5%;
+    left : 50%;
+    transform: translate(100% , -50%);
+    z-index: 2;
+    color: white;
+}
+
+canvas{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: inset 5px rgba(168, 168, 168, 0.995);
+    margin-top: 60px;
+    box-shadow: 15px 15px 30px;
+    border-radius: 10px;
+}
+
+/* GAME OVER */
+.gameOver{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    z-index: 200;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.gameOver p{
+    font-size: 20px;
+}
+
+.gameOver button , .start button{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: fantasy;
+    margin: 0 30%;
+    line-height: 30px;
+    transition: 0.5s;
+    background-color: coral;
+    color: black;
+}
+
+.gameOver button:hover , .start button:hover{
+    background-color: black;
+    color: coral;    
+}
+
+.main{
+    backdrop-filter: blur(10px);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50% , -50%);
+    background-color: rgba(240, 128, 128, 0.302);
+}
+
+.hidden{
+    display: none;
+}
+
+/* START */
+.start{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 20px;
+    border: solid 5px rgb(0, 0, 0) ;
+    border-radius: 10px;
+    z-index: 200;
+}
+.start h1{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.start p{
+    font-family: monospace;
+    position: relative;
+    top: -20px;
+    text-align: center;
+}
+.start button{
+    margin: 0 40%;
+}
